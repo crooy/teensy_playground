@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:../../../../Library/Autosave Information"
+      name = "src">
+      <FileRef
+         location = "group:../../Documents/dev/Arduino/blinky/blinky.c">
+      </FileRef>
+      <FileRef
+         location = "group:../../Documents/dev/Arduino/blinky/print.c">
+      </FileRef>
+      <FileRef
+         location = "group:../../Documents/dev/Arduino/blinky/usb_debug_only.c">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:../../../../Library/Autosave Information"
+      name = "include">
+      <FileRef
+         location = "group:../../Documents/dev/Arduino/blinky/print.h">
+      </FileRef>
+      <FileRef
+         location = "group:../../Documents/dev/Arduino/blinky/usb_debug_only.h">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:../../Documents/dev/Arduino/blinky/Makefile">
+   </FileRef>
+</Workspace>
