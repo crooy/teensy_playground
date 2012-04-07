@@ -1,0 +1,175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		52B2F6A51530BAD0008E516C /* blinky.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = blinky.c; path = ../../Documents/dev/Arduino/blinky/blinky.c; sourceTree = "<group>"; };
+		52B2F6A61530BAD0008E516C /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = print.c; path = ../../Documents/dev/Arduino/blinky/print.c; sourceTree = "<group>"; };
+		52B2F6A71530BAD0008E516C /* usb_debug_only.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = usb_debug_only.c; path = ../../Documents/dev/Arduino/blinky/usb_debug_only.c; sourceTree = "<group>"; };
+		52B2F6A91530BAE2008E516C /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = print.h; path = ../../Documents/dev/Arduino/blinky/print.h; sourceTree = "<group>"; };
+		52B2F6AA1530BAE2008E516C /* usb_debug_only.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = usb_debug_only.h; path = ../../Documents/dev/Arduino/blinky/usb_debug_only.h; sourceTree = "<group>"; };
+		52B2F6AB1530BAE9008E516C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile; path = /Users/ronald/Documents/dev/Arduino/blinky/../../Documents/dev/Arduino/blinky/Makefile; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		52B2F6941530B99E008E516C = {
+			isa = PBXGroup;
+			children = (
+				52B2F6AB1530BAE9008E516C /* Makefile */,
+				52B2F6A41530BAD0008E516C /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		52B2F6A41530BAD0008E516C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				52B2F6A91530BAE2008E516C /* print.h */,
+				52B2F6AA1530BAE2008E516C /* usb_debug_only.h */,
+				52B2F6A51530BAD0008E516C /* blinky.c */,
+				52B2F6A61530BAD0008E516C /* print.c */,
+				52B2F6A71530BAD0008E516C /* usb_debug_only.c */,
+			);
+			name = src;
+			path = "../../../../../Library/Autosave Information";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		52B2F69B1530B99E008E516C /* teensy */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 52B2F69E1530B99E008E516C /* Build configuration list for PBXLegacyTarget "teensy" */;
+			buildPhases = (
+			);
+			buildToolPath = "/usr/local/CrossPack-AVR/bin/make";
+			buildWorkingDirectory = /Users/ronald/Documents/dev/Arduino/blinky;
+			dependencies = (
+			);
+			name = teensy;
+			passBuildSettingsInEnvironment = 1;
+			productName = teensy;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		52B2F6961530B99E008E516C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Sioux Embedded Systems";
+			};
+			buildConfigurationList = 52B2F6991530B99E008E516C /* Build configuration list for PBXProject "teensy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52B2F6941530B99E008E516C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B2F69B1530B99E008E516C /* teensy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		52B2F69C1530B99E008E516C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52B2F69D1530B99E008E516C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52B2F69F1530B99E008E516C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52B2F6A01530B99E008E516C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52B2F6991530B99E008E516C /* Build configuration list for PBXProject "teensy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B2F69C1530B99E008E516C /* Debug */,
+				52B2F69D1530B99E008E516C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B2F69E1530B99E008E516C /* Build configuration list for PBXLegacyTarget "teensy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B2F69F1530B99E008E516C /* Debug */,
+				52B2F6A01530B99E008E516C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52B2F6961530B99E008E516C /* Project object */;
+}
