@@ -4,7 +4,7 @@ const int rxpin = 7;
 const int buttonPin = 6;
 const int analogPin = 0;
 const unsigned long MAXT = 10000;
-const int BUCKET_SIZE = 10;
+const int BUCKET_SIZE = 2;
 const int BUCKETS = 1000;
 
 void setup()
@@ -53,7 +53,7 @@ void printBucket()
   {
     sum += bucket[i];
   }
-  unsigned long minimum = sum / BUCKETS;
+  unsigned long minimum = sum / 100;
   Serial.println();
   for(int i=0; i< BUCKETS; ++i)
   {
