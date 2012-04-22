@@ -3,7 +3,7 @@ const int txpin = 8;
 const int rxpin = 7;
 const int buttonPin = 6;
 const int analogPin = 0;
-const unsigned long MAX_T = 1000000;
+const unsigned long MAXT = 10000;
 const int BUCKET_SIZE = 10;
 const int BUCKETS = 1000;
 
@@ -38,20 +38,26 @@ void initBuckets()
 
 void buttonPressed()
 {
-
+  noInterrupts();
   digitalWrite(ledpin, HIGH);
   printBucket();
   delay(2000);
   digitalWrite(ledpin, LOW);
-
+  interrupts();
 }
 
 void printBucket()
 {
+  unsigned long sum = 0;
+  for(int i=0; i< BUCKETS; ++i)
+  {
+    sum += bucket[i];
+  }
+  unsigned long minimum = sum / BUCKETS;
   Serial.println();
   for(int i=0; i< BUCKETS; ++i)
   {
-    if (bucket[i] > 0 ){
+    if (bucket[i] > minimum ){
       Serial.print(i*BUCKET_SIZE);
       Serial.print(" : ");
       Serial.println(bucket[i]);
@@ -65,8 +71,10 @@ void signalChange()
   unsigned long time=micros();
   dt = time - markedTime;
   markedTime = time;
-  int bucketIndex = dt / BUCKET_SIZE;
-  ++bucket[bucketIndex];
+  if (dt < MAXT){
+    int bucketIndex = dt / BUCKET_SIZE;
+    ++bucket[bucketIndex];
+  }
 }
 
 
